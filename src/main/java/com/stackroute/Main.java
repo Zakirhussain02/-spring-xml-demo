@@ -39,10 +39,10 @@ public class Main {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         Movie movieOne = (Movie) applicationContext.getBean("movie1");
         Movie movieTwo = (Movie) applicationContext.getBean("movie2");
-        Movie movieTwoo = (Movie) applicationContext.getBean("movie");
+        //Movie movieTwoo = (Movie) applicationContext.getBean("movie");
         Movie movieThree = (Movie) applicationContext.getBean("movie3");
         System.out.println(movieOne);
-        System.out.println(movieTwoo);
+        //System.out.println(movieTwoo);
         System.out.println(movieThree);
         System.out.println();
         System.out.println(movieOne==movieTwo);
