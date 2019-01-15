@@ -25,14 +25,14 @@
     </bean>
 
 
-    <bean name="movie1,movie" class="com.stackroute.domain.Movie" scope="prototype">
+    <bean name="movie1" class="com.stackroute.domain.Movie" scope="prototype" >
         <constructor-arg name="actor" ref="actor1"></constructor-arg>
     </bean>
 
-    <bean id="movie2" class="com.stackroute.domain.Movie">
+    <bean id="movie2" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg name="actor" ref="actor2"></constructor-arg>
     </bean>
-    <bean id="movie3" class="com.stackroute.domain.Movie">
+    <bean id="movie3" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg name="actor" ref="actor3"></constructor-arg>
     </bean>
 
