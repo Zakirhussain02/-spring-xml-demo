@@ -40,6 +40,7 @@ public class Main {
         //ApplicationContext
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
+        ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
 //        Movie movieOne = (Movie) applicationContext.getBean("movie1");
 //        Movie movieTwo = (Movie) applicationContext.getBean("movie2");
 //        //Movie movieTwoo = (Movie) applicationContext.getBean("movie");

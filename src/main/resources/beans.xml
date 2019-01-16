@@ -35,5 +35,8 @@
     <bean id="movie3" class="com.stackroute.domain.Movie">
         <constructor-arg name="actor" ref="actor3"></constructor-arg>
     </bean>
+    <bean id="BeanLifecycleDemoBean" class="com.stackroute.Demo.BeanLifecycleDemoBean">
+
+    </bean>
 
 </beans>
