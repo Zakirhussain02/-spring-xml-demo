@@ -11,6 +11,11 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
 
     public void destroy() throws Exception {
         System.out.println("Inside DisposableBean");
-
+    }
+    public void customInit() throws Exception{
+        System.out.println("Inside CustomInit");
+    }
+    public void customDestroy() throws Exception{
+        System.out.println("Inside CustomDestroy");
     }
 }
